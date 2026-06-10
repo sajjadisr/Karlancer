@@ -1,0 +1,507 @@
+/* ============================================
+   تعریف فونت‌های فارسی وزیر و تنها
+   ============================================ */
+
+/* فونت وزیر - برای متن‌های اصلی */
+@font-face {
+    font-family: 'Vazir';
+    src: url('/fonts/vazir-font-v18.0.0/Vazir.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* فونت وزیر - نسخه ضخیم (Bold) */
+@font-face {
+    font-family: 'Vazir';
+    src: url('/fonts/vazir-font-v18.0.0/Vazir-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* فونت تنها - برای تیترها و هدرها */
+@font-face {
+    font-family: 'Tanha';
+    src: url('/fonts/tanha-font-v0.9/Tanha.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* فونت تنها - نسخه ضخیم */
+@font-face {
+    font-family: 'Tanha';
+    src: url('/fonts/tanha-font-v0.9/Tanha-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ============================================
+   تنظیمات پایه و ریست استایل‌ها
+   ============================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* استفاده از فونت وزیر برای کل سایت */
+body {
+    font-family: 'Vazir', 'Tahoma', 'Segoe UI', system-ui, sans-serif;
+    line-height: 1.6;
+    color: #1a1a2e;
+    background-color: #f8f9fa;
+}
+
+/* استفاده از فونت تنها برای تیترها */
+h1, h2, h3, h4, h5, h6,
+.hero h1,
+.btn {
+    font-family: 'Tanha', 'Vazir', 'Tahoma', sans-serif;
+}
+
+/* ============================================
+   کانتینر اصلی
+   ============================================ */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ============================================
+   بخش هدر (سربرگ) سایت
+   ============================================ */
+.header {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* نوار ناوبری */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+/* استایل لوگو */
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    font-family: 'Tanha', 'Vazir', 'Tahoma', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #4a6cf7;
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
+}
+
+.logo-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #4a6cf7;
+}
+
+/* منوی اصلی */
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    color: #4a6cf7;
+}
+
+/* ============================================
+   دکمه‌ها
+   ============================================ */
+.btn {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 500;
+    font-family: 'Tanha', 'Vazir', 'Tahoma', sans-serif;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #4a6cf7;
+    color: #4a6cf7;
+}
+
+.btn-outline:hover {
+    background: #4a6cf7;
+    color: white;
+}
+
+.btn-primary {
+    background: #4a6cf7;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #3a5ce8;
+    transform: translateY(-2px);
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+/* ============================================
+   بخش Hero
+   ============================================ */
+.hero {
+    padding: 80px 0;
+    text-align: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    letter-spacing: -0.5px;
+}
+
+/* ============================================
+   ریسپانسیو
+   ============================================ */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .nav-menu ul {
+        gap: 1rem;
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .logo a {
+        font-size: 1.4rem;
+    }
+    
+    .logo-img {
+        height: 30px;
+    }
+    
+    .logo-text {
+        font-size: 1.4rem;
+    }
+}
+/* ============================================
+   بخش دسته‌بندی پروژه‌ها
+   ============================================ */
+.categories {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+/* هدر بخش */
+.section-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.section-header h2 {
+    font-size: 2.2rem;
+    color: #1a1a2e;
+    margin-bottom: 12px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-header h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #4a6cf7, #764ba2);
+    border-radius: 3px;
+}
+
+.section-header p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+/* شبکه کارت‌ها - با استفاده از گرید */
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* استایل هر کارت */
+.category-card {
+    background: #f8f9fa;
+    border-radius: 16px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid #eef2f6;
+}
+
+.category-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    border-color: #4a6cf7;
+}
+
+/* آیکون دسته‌بندی */
+.category-icon {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+/* عنوان دسته */
+.category-card h3 {
+    font-size: 1.4rem;
+    color: #1a1a2e;
+    margin-bottom: 12px;
+}
+
+/* توضیحات */
+.category-card p {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+/* تعداد پروژه‌ها */
+.project-count {
+    display: inline-block;
+    background: #e8ecff;
+    color: #4a6cf7;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* لینک مشاهده پروژه‌ها */
+.category-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #4a6cf7;
+    text-decoration: none;
+    font-weight: 500;
+    transition: gap 0.3s;
+}
+
+.category-link:hover {
+    gap: 12px;
+    color: #3a5ce8;
+}
+
+/* ============================================
+   ریسپانسیو برای دسته‌بندی
+   ============================================ */
+@media (max-width: 768px) {
+    .categories {
+        padding: 40px 0;
+    }
+    
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .categories-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .category-card {
+        padding: 20px;
+    }
+}
+/* تنظیم آیکون‌های SVG در کارت‌ها */
+.category-icon img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    transition: transform 0.3s;
+}
+
+.category-card:hover .category-icon img {
+    transform: scale(1.05);
+}
+/* ============================================
+   بخش پروژه‌های جدید
+   ============================================ */
+.latest-projects {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+/* شبکه پروژه‌ها */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+/* کارت پروژه */
+.project-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s;
+    border: 1px solid #eef2f6;
+    position: relative;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    border-color: #4a6cf7;
+}
+
+/* برچسب جدید/ویژه */
+.project-badge {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: linear-gradient(135deg, #4a6cf7, #764ba2);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+/* عنوان پروژه */
+.project-card h3 {
+    font-size: 1.35rem;
+    margin: 15px 0 12px 0;
+    color: #1a1a2e;
+    padding-right: 10px;
+}
+
+/* توضیحات پروژه */
+.project-desc {
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+/* متا اطلاعات (دسته و بودجه) */
+.project-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.project-category {
+    background: #e8ecff;
+    color: #4a6cf7;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.project-budget {
+    color: #2ecc71;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* زمان تحویل */
+.project-deadline {
+    color: #f39c12;
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* لینک جزئیات */
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #4a6cf7;
+    text-decoration: none;
+    font-weight: 500;
+    transition: gap 0.3s;
+}
+
+.project-link:hover {
+    gap: 12px;
+}
+
+/* دکمه مشاهده همه */
+.view-all {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.view-all .btn {
+    padding: 12px 32px;
+    font-size: 1rem;
+}
+
+/* ============================================
+   ریسپانسیو برای بخش پروژه‌ها
+   ============================================ */
+@media (max-width: 768px) {
+    .latest-projects {
+        padding: 40px 0;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .project-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .project-meta {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
