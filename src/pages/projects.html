@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پروژه‌ها | کارلنسر</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/projects.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="/">
+                        <img src="/Icon.svg" alt="لوگو کارلنسر" class="logo-img">
+                        <span class="logo-text">کارلنسر</span>
+                    </a>
+                </div>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="/">خانه</a></li>
+                        <li><a href="/src/pages/projects.html" class="active">پروژه‌ها</a></li>
+                        <li><a href="/src/pages/about.html">درباره ما</a></li>
+                        <li><a href="/src/pages/contact.html">تماس با ما</a></li>
+                    </ul>
+                </nav>
+                <div class="auth-buttons">
+                    <button class="btn btn-outline">ورود</button>
+                    <button class="btn btn-primary">ثبت‌نام</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="projects-main">
+        <div class="container">
+            <div class="page-header">
+                <h1>پروژه‌های قابل انجام</h1>
+                <p>از بین پروژه‌های زیر، بهترین گزینه را انتخاب کنید</p>
+            </div>
+
+            <div class="filter-section">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="جستجوی پروژه...">
+                    <button id="searchBtn">
+                        <img src="/svg/search.svg" alt="جستجو"> جستجو
+                    </button>
+                </div>
+                <div class="category-filter">
+                    <button class="filter-btn active" data-category="all">همه</button>
+                    <button class="filter-btn" data-category="برنامه‌نویسی">برنامه‌نویسی</button>
+                    <button class="filter-btn" data-category="طراحی گرافیک">طراحی گرافیک</button>
+                    <button class="filter-btn" data-category="سئو و بازاریابی">سئو و بازاریابی</button>
+                    <button class="filter-btn" data-category="تولید محتوا">تولید محتوا</button>
+                    <button class="filter-btn" data-category="ترجمه">ترجمه</button>
+                    <button class="filter-btn" data-category="پشتیبانی فنی">پشتیبانی فنی</button>
+                </div>
+            </div>
+
+            <div id="projectsList" class="projects-list"></div>
+        </div>
+    </main>
+
+    <script type="module" src="/src/js/projects.js"></script>
+</body>
+</html>

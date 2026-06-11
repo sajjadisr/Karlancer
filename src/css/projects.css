@@ -1,0 +1,239 @@
+/* ============================================
+   استایل‌های مخصوص صفحه پروژه‌ها
+   ============================================ */
+
+/* صفحه اصلی پروژه‌ها */
+.projects-main {
+    padding: 50px 0 80px;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+/* هدر صفحه */
+.page-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    color: #1a1a2e;
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+/* بخش فیلتر */
+.filter-section {
+    background: #fff;
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 40px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* جستجو */
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 12px 18px;
+    border: 2px solid #eef2f6;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s;
+}
+
+.search-box input:focus {
+    outline: none;
+    border-color: #4a6cf7;
+}
+
+.search-box button {
+    padding: 12px 24px;
+    background: #4a6cf7;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.search-box button:hover {
+    background: #3a5ce8;
+}
+
+/* دکمه‌های فیلتر دسته‌بندی */
+.category-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.filter-btn {
+    padding: 8px 20px;
+    background: #f0f2f5;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+}
+
+.filter-btn:hover {
+    background: #e0e4e8;
+}
+
+.filter-btn.active {
+    background: #4a6cf7;
+    color: white;
+}
+
+/* لیست پروژه‌ها (شبکه کارتی) */
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 30px;
+}
+
+/* کارت پروژه (در این صفحه کمی بزرگتر) */
+.project-item {
+    background: #fff;
+    border-radius: 20px;
+    padding: 25px;
+    transition: all 0.3s;
+    border: 1px solid #eef2f6;
+    position: relative;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 30px rgba(0,0,0,0.1);
+    border-color: #4a6cf7;
+}
+
+/* برچسب جدید/ویژه (اختیاری) */
+.project-badge {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: linear-gradient(135deg, #4a6cf7, #764ba2);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+/* عنوان پروژه */
+.project-item h3 {
+    font-size: 1.4rem;
+    margin: 15px 0 12px 0;
+    color: #1a1a2e;
+    padding-left: 10px;
+}
+
+/* توضیحات */
+.project-item .project-desc {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+/* متا اطلاعات */
+.project-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.project-category {
+    background: #e8ecff;
+    color: #4a6cf7;
+    padding: 5px 14px;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.project-budget {
+    color: #2ecc71;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* زمان تحویل */
+.project-deadline {
+    color: #f39c12;
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* لینک جزئیات */
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #4a6cf7;
+    text-decoration: none;
+    font-weight: 500;
+    transition: gap 0.3s;
+}
+
+.project-link:hover {
+    gap: 12px;
+}
+
+/* پیام بدون نتیجه */
+.no-results {
+    text-align: center;
+    padding: 60px;
+    background: #fff;
+    border-radius: 20px;
+    grid-column: 1 / -1;
+}
+
+.no-results p {
+    font-size: 1.2rem;
+    color: #999;
+}
+
+/* ریسپانسیو */
+@media (max-width: 768px) {
+    .projects-main {
+        padding: 30px 0 50px;
+    }
+    .page-header h1 {
+        font-size: 1.8rem;
+    }
+    .filter-section {
+        padding: 15px;
+    }
+    .category-filter {
+        gap: 8px;
+    }
+    .filter-btn {
+        padding: 6px 14px;
+        font-size: 0.8rem;
+    }
+    .projects-list {
+        grid-template-columns: 1fr;
+    }
+}

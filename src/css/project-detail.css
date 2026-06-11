@@ -1,0 +1,252 @@
+/* ============================================
+   استایل‌های صفحه جزئیات پروژه
+   ============================================ */
+
+.detail-main {
+    padding: 50px 0 80px;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+/* کانتینر اصلی جزئیات */
+.project-detail-card {
+    background: #fff;
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border: 1px solid #eef2f6;
+}
+
+/* هدر جزئیات (عنوان و وضعیت) */
+.detail-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eef2f6;
+}
+
+.detail-header h1 {
+    font-size: 2rem;
+    color: #1a1a2e;
+    margin: 0;
+}
+
+.project-status {
+    background: linear-gradient(135deg, #4a6cf7, #764ba2);
+    color: white;
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+/* اطلاعات اصلی (بودجه، مهلت، دسته) */
+.detail-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.info-icon {
+    font-size: 1.8rem;
+}
+
+.info-label {
+    font-weight: 500;
+    color: #666;
+    font-size: 0.85rem;
+}
+
+.info-value {
+    font-weight: bold;
+    color: #1a1a2e;
+    font-size: 1.1rem;
+}
+
+/* توضیحات کامل */
+.detail-description {
+    margin-bottom: 30px;
+}
+
+.detail-description h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #1a1a2e;
+}
+
+.detail-description p {
+    line-height: 1.8;
+    color: #444;
+    font-size: 1rem;
+}
+
+/* مهارت‌های موردنیاز */
+.skills-section {
+    margin-bottom: 30px;
+}
+
+.skills-section h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag {
+    background: #e8ecff;
+    color: #4a6cf7;
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* آمار پیشنهادها */
+.proposal-stats {
+    background: linear-gradient(135deg, #667eea15, #764ba215);
+    padding: 15px 20px;
+    border-radius: 16px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.proposal-count {
+    font-size: 1rem;
+    color: #4a6cf7;
+}
+
+.proposal-count strong {
+    font-size: 1.4rem;
+    margin-left: 5px;
+}
+
+/* دکمه ارسال پیشنهاد */
+.submit-proposal {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-submit {
+    background: linear-gradient(135deg, #4a6cf7, #764ba2);
+    color: white;
+    padding: 14px 40px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-weight: bold;
+}
+
+.btn-submit:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(74,108,247,0.3);
+}
+
+/* اطلاعات کارفرما */
+.client-info {
+    background: #fff;
+    border: 1px solid #eef2f6;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.client-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.client-details {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.client-avatar {
+    width: 50px;
+    height: 50px;
+    background: #4a6cf7;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.client-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.client-rating {
+    color: #f39c12;
+    font-size: 0.9rem;
+}
+
+/* لودینگ و خطا */
+.loading, .error {
+    text-align: center;
+    padding: 60px;
+    background: #fff;
+    border-radius: 20px;
+    font-size: 1.2rem;
+}
+
+.error {
+    color: #e74c3c;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #4a6cf7;
+    text-decoration: none;
+}
+
+/* ریسپانسیو */
+@media (max-width: 768px) {
+    .detail-main {
+        padding: 20px 0 50px;
+    }
+    .project-detail-card {
+        padding: 20px;
+    }
+    .detail-header h1 {
+        font-size: 1.5rem;
+    }
+    .detail-info {
+        gap: 15px;
+    }
+    .info-item {
+        width: calc(50% - 15px);
+    }
+}
