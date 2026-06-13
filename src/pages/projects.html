@@ -6,17 +6,24 @@
     <title>پروژه‌ها | کارلنسر</title>
     <link rel="stylesheet" href="/src/css/style.css">
     <link rel="stylesheet" href="/src/css/projects.css">
+    <link rel="icon" type="image/svg+xml" href="/svg/favicon.svg">
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="navbar">
+                <!-- دکمه همبرگر (سمت راست در RTL) -->
+                <button class="mobile-menu-toggle" aria-label="منو">
+                    <span></span><span></span><span></span>
+                </button>
+
                 <div class="logo">
                     <a href="/">
                         <img src="/Icon.svg" alt="لوگو کارلنسر" class="logo-img">
                         <span class="logo-text">کارلنسر</span>
                     </a>
                 </div>
+
                 <nav class="nav-menu">
                     <ul>
                         <li><a href="/">خانه</a></li>
@@ -25,6 +32,7 @@
                         <li><a href="/src/pages/contact.html">تماس با ما</a></li>
                     </ul>
                 </nav>
+
                 <div class="auth-buttons">
                     <button class="btn btn-outline">ورود</button>
                     <button class="btn btn-primary">ثبت‌نام</button>
@@ -62,6 +70,8 @@
         </div>
     </main>
 
+    <!-- اضافه شدن main.js برای منوی همبرگر -->
+    <script type="module" src="/src/js/main.js"></script>
     <script type="module" src="/src/js/projects.js"></script>
 </body>
 </html>

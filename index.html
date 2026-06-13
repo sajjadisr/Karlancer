@@ -4,19 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>کارلنسر | پلتفرم فریلنسری و انجام پروژه</title>
+    <link rel="icon" type="image/svg+xml" href="/svg/favicon.svg">
     <link rel="stylesheet" href="/src/css/style.css">
 </head>
 <body>
-    <!-- هدر -->
+    <!-- هدر سایت -->
     <header class="header">
         <div class="container">
             <div class="navbar">
+                <!-- دکمه همبرگر (در RTL در سمت راست قرار می‌گیرد) -->
+                <button class="mobile-menu-toggle" aria-label="منو">
+                    <span></span><span></span><span></span>
+                </button>
+
                 <div class="logo">
                     <a href="/">
                         <img src="/Icon.svg" alt="لوگو کارلنسر" class="logo-img">
                         <span class="logo-text">کارلنسر</span>
                     </a>
                 </div>
+
                 <nav class="nav-menu">
                     <ul>
                         <li><a href="/" class="active">خانه</a></li>
@@ -25,6 +32,7 @@
                         <li><a href="/src/pages/contact.html">تماس با ما</a></li>
                     </ul>
                 </nav>
+
                 <div class="auth-buttons">
                     <button class="btn btn-outline">ورود</button>
                     <button class="btn btn-primary">ثبت‌نام</button>
@@ -33,11 +41,89 @@
         </div>
     </header>
 
-    <!-- Hero -->
+    <!-- بخش Hero -->
     <section class="hero">
         <div class="container">
-            <h1>بهترین فرصت‌های پروژه‌ای اینجاست</h1>
-            <p>به کارلنسر بپیوندید و پروژه‌های خود را به بهترین فریلنسرها بسپارید</p>
+            <div class="hero-layout">
+                <div class="hero-text">
+                    <h1>بهترین فرصت‌های پروژه‌ای اینجاست</h1>
+                    <p>به کارلنسر بپیوندید و پروژه‌های خود را به بهترین فریلنسرها بسپارید، یا با انجام پروژه‌ها کسب درآمد کنید.</p>
+                </div>
+
+                <div class="hero-image">
+                    <svg viewBox="690 70 480 390" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg">
+                        <!-- محتوای SVG (بدون تغییر) -->
+                        <defs>
+                            <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                                <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blurred"/>
+                                <feMerge>
+                                    <feMergeNode in="blurred"/>
+                                    <feMergeNode in="SourceGraphic"/>
+                                </feMerge>
+                            </filter>
+                        </defs>
+                        <circle cx="952" cy="185" r="108" fill="rgba(255,255,255,0.08)">
+                            <animate attributeName="r" values="108;126;108" dur="6s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="1086" cy="426" r="120" fill="rgba(255,255,255,0.05)">
+                            <animate attributeName="r" values="120;138;120" dur="8s" repeatCount="indefinite"/>
+                        </circle>
+                        <g>
+                            <animateTransform attributeName="transform" type="translate" values="0 0;0 -11;0 0" dur="4s" repeatCount="indefinite"/>
+                            <rect x="756" y="174" width="290" height="196" rx="18" fill="rgba(255,255,255,0.11)" stroke="rgba(255,255,255,0.42)" stroke-width="2"/>
+                            <rect x="756" y="174" width="290" height="30" rx="18" fill="rgba(255,255,255,0.10)"/>
+                            <rect x="756" y="190" width="290" height="14" fill="rgba(255,255,255,0.10)"/>
+                            <circle cx="779" cy="190" r="5.5" fill="rgba(255,255,255,0.45)"/>
+                            <circle cx="797" cy="190" r="5.5" fill="rgba(255,255,255,0.45)"/>
+                            <circle cx="815" cy="190" r="5.5" fill="rgba(255,255,255,0.45)"/>
+                            <path d="M797 336 L849 304 L899 315 L948 270 L1007 245 L1007 355 L797 355 Z" fill="rgba(255,255,255,0.06)"/>
+                            <polyline points="797,336 849,304 899,315 948,270 1007,245" fill="none" stroke="white" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="312" stroke-dashoffset="312">
+                                <animate attributeName="stroke-dashoffset" values="312;0;0;312" keyTimes="0;0.55;0.85;1" dur="4.2s" repeatCount="indefinite"/>
+                            </polyline>
+                            <circle cx="1007" cy="245" r="7" fill="white" filter="url(#glow)">
+                                <animate attributeName="r" values="7;10;7" dur="1.8s" repeatCount="indefinite"/>
+                            </circle>
+                            <path d="M733 370 H1069 L1094 400 H708 Z" fill="rgba(255,255,255,0.22)"/>
+                            <line x1="803" y1="377" x2="999" y2="377" stroke="rgba(255,255,255,0.18)" stroke-width="2" stroke-linecap="round"/>
+                            <line x1="823" y1="385" x2="979" y2="385" stroke="rgba(255,255,255,0.12)" stroke-width="2" stroke-linecap="round"/>
+                        </g>
+                        <line x1="1040" y1="184" x2="1018" y2="212" stroke="rgba(255,255,255,0.22)" stroke-width="1.5" stroke-dasharray="5 4">
+                            <animate attributeName="stroke-dashoffset" values="0;-18" dur="1.2s" repeatCount="indefinite"/>
+                        </line>
+                        <line x1="1115" y1="218" x2="1062" y2="258" stroke="rgba(255,255,255,0.22)" stroke-width="1.5" stroke-dasharray="5 4">
+                            <animate attributeName="stroke-dashoffset" values="0;-18" dur="1.6s" repeatCount="indefinite"/>
+                        </line>
+                        <g>
+                            <animateTransform attributeName="transform" type="translate" values="1040 148;1040 133;1040 148" dur="3s" repeatCount="indefinite"/>
+                            <circle r="35" fill="rgba(255,255,255,0.16)" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+                            <path d="M-11 -8 L-21 0 L-11 8 M11 -8 L21 0 L11 8" stroke="white" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <g>
+                            <animateTransform attributeName="transform" type="translate" values="1121 251;1121 267;1121 251" dur="4.5s" repeatCount="indefinite"/>
+                            <circle r="35" fill="rgba(255,255,255,0.16)" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+                            <path d="M-9 12 L7 -5 L16 4 L0 21 L-11 23 Z" fill="white"/>
+                            <line x1="7" y1="-5" x2="-3" y2="-16" stroke="rgba(255,255,255,0.5)" stroke-width="2" stroke-linecap="round"/>
+                        </g>
+                        <g>
+                            <animateTransform attributeName="transform" type="translate" values="1031 361;1031 347;1031 361" dur="5s" repeatCount="indefinite"/>
+                            <circle r="35" fill="rgba(255,255,255,0.16)" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+                            <g>
+                                <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="12s" repeatCount="indefinite"/>
+                                <circle r="10" stroke="white" stroke-width="3" fill="none"/>
+                                <path d="M0 -20V-15 M0 20V15 M20 0H15 M-20 0H-15 M14 -14L11 -11 M-14 -14L-11 -11 M14 14L11 11 M-14 14L-11 11" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                            </g>
+                        </g>
+                        <g fill="white">
+                            <circle cx="972" cy="100" r="3"><animate attributeName="opacity" values="0.2;1;0.2" dur="2s" repeatCount="indefinite"/></circle>
+                            <circle cx="1113" cy="130" r="4"><animate attributeName="opacity" values="1;0.2;1" dur="3s" repeatCount="indefinite"/></circle>
+                            <circle cx="1082" cy="330" r="4"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.8s" repeatCount="indefinite"/></circle>
+                            <circle cx="720" cy="200" r="2.5"><animate attributeName="opacity" values="0.25;0.75;0.25" dur="3.6s" repeatCount="indefinite"/></circle>
+                            <circle cx="738" cy="322" r="2"><animate attributeName="opacity" values="0.2;0.7;0.2" dur="2.3s" repeatCount="indefinite"/></circle>
+                            <circle cx="756" cy="440" r="3"><animate attributeName="opacity" values="0.2;0.65;0.2" dur="4.1s" repeatCount="indefinite"/></circle>
+                        </g>
+                    </svg>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -49,6 +135,7 @@
                 <p>پروژه مورد نظر خود را بر اساس تخصص انتخاب کنید</p>
             </div>
             <div class="categories-grid">
+                <!-- کارت‌های دسته‌بندی (بدون تغییر) -->
                 <div class="category-card">
                     <div class="category-icon"><img src="/svg/programming.svg" alt="برنامه‌نویسی"></div>
                     <h3>برنامه‌نویسی و توسعه</h3>
@@ -95,7 +182,7 @@
         </div>
     </section>
 
-    <!-- پروژه‌های جدید (با لینک به جزئیات واقعی) -->
+    <!-- پروژه‌های جدید -->
     <section class="latest-projects">
         <div class="container">
             <div class="section-header">
@@ -103,75 +190,49 @@
                 <p>آخرین پروژه‌های ثبت‌شده توسط کارفرمایان</p>
             </div>
             <div class="projects-grid">
-                <!-- پروژه ۱: داشبورد React (id=1 در JSON) -->
+                <!-- نمونه پروژه‌ها (بدون تغییر) -->
                 <div class="project-card">
                     <div class="project-badge">جدید</div>
                     <h3>طراحی داشبورد مدیریتی با React</h3>
                     <p class="project-desc">نیاز به یک داشبورد حرفه‌ای با قابلیت نمایش نمودارهای تعاملی و مدیریت کاربران...</p>
                     <div class="project-meta">
                         <span class="project-category">برنامه‌نویسی</span>
-                        <span class="project-budget">
-                            <img src="/svg/wallet.svg" alt="بودجه" style="width: 16px; vertical-align: middle; margin-left: 4px;">
-                            ۱۵ میلیون تومان
-                        </span>
+                        <span class="project-budget"><img src="/svg/wallet.svg" alt="بودجه" style="width: 16px; vertical-align: middle; margin-left: 4px;">۱۵ میلیون تومان</span>
                     </div>
-                    <div class="project-deadline">
-                        <img src="/svg/clock.svg" alt="زمان"> زمان تحویل: ۲۵ روز
-                    </div>
+                    <div class="project-deadline"><img src="/svg/clock.svg" alt="زمان"> زمان تحویل: ۲۵ روز</div>
                     <a href="/src/pages/project-detail.html?id=1" class="project-link">مشاهده جزئیات پروژه <img src="/svg/arrow-left.svg" alt="arrow"></a>
                 </div>
-
-                <!-- پروژه ۲: طراحی لوگو (id=2 در JSON) -->
                 <div class="project-card">
                     <div class="project-badge">ویژه</div>
                     <h3>طراحی لوگو و هویت برند برای استارتاپ</h3>
                     <p class="project-desc">طراحی لوگو، پالت رنگی، فونت و راهنمای برند برای یک استارتاپ فناوری...</p>
                     <div class="project-meta">
                         <span class="project-category">طراحی گرافیک</span>
-                        <span class="project-budget">
-                            <img src="/svg/wallet.svg" alt="بودجه" style="width: 16px; vertical-align: middle; margin-left: 4px;">
-                            ۸ میلیون تومان
-                        </span>
+                        <span class="project-budget"><img src="/svg/wallet.svg" alt="بودجه" style="width: 16px; vertical-align: middle; margin-left: 4px;">۸ میلیون تومان</span>
                     </div>
-                    <div class="project-deadline">
-                        <img src="/svg/clock.svg" alt="زمان"> زمان تحویل: ۱۲ روز
-                    </div>
+                    <div class="project-deadline"><img src="/svg/clock.svg" alt="زمان"> زمان تحویل: ۱۲ روز</div>
                     <a href="/src/pages/project-detail.html?id=2" class="project-link">مشاهده جزئیات پروژه <img src="/svg/arrow-left.svg" alt="arrow"></a>
                 </div>
-
-                <!-- پروژه ۳: سئو فروشگاهی (id=3 در JSON) -->
                 <div class="project-card">
                     <div class="project-badge">جدید</div>
                     <h3>سئو و بهینه‌سازی سایت فروشگاهی</h3>
                     <p class="project-desc">آنالیز سایت، بهینه‌سازی داخلی و خارجی، تولید محتوای سئو شده برای ۵۰ صفحه...</p>
                     <div class="project-meta">
                         <span class="project-category">سئو و بازاریابی</span>
-                        <span class="project-budget">
-                            <img src="/svg/wallet.svg" alt="بودجه" style="width: 16px; vertical-align: middle; margin-left: 4px;">
-                            ۱۲ میلیون تومان
-                        </span>
+                        <span class="project-budget"><img src="/svg/wallet.svg" alt="بودجه" style="width: 16px; vertical-align: middle; margin-left: 4px;">۱۲ میلیون تومان</span>
                     </div>
-                    <div class="project-deadline">
-                        <img src="/svg/clock.svg" alt="زمان"> زمان تحویل: ۳۰ روز
-                    </div>
+                    <div class="project-deadline"><img src="/svg/clock.svg" alt="زمان"> زمان تحویل: ۳۰ روز</div>
                     <a href="/src/pages/project-detail.html?id=3" class="project-link">مشاهده جزئیات پروژه <img src="/svg/arrow-left.svg" alt="arrow"></a>
                 </div>
-
-                <!-- پروژه ۴: تولید محتوا (id=4 در JSON) -->
                 <div class="project-card">
                     <div class="project-badge">ویژه</div>
                     <h3>نوشتن ۲۰ مقاله سئو شده برای وبلاگ</h3>
                     <p class="project-desc">تولید محتوای تخصصی در حوزه هوش مصنوعی و یادگیری ماشین، هر مقاله حداقل ۱۰۰۰ کلمه...</p>
                     <div class="project-meta">
                         <span class="project-category">تولید محتوا</span>
-                        <span class="project-budget">
-                            <img src="/svg/wallet.svg" alt="بودجه" style="width: 16px; vertical-align: middle; margin-left: 4px;">
-                            ۱۰ میلیون تومان
-                        </span>
+                        <span class="project-budget"><img src="/svg/wallet.svg" alt="بودجه" style="width: 16px; vertical-align: middle; margin-left: 4px;">۱۰ میلیون تومان</span>
                     </div>
-                    <div class="project-deadline">
-                        <img src="/svg/clock.svg" alt="زمان"> زمان تحویل: ۲۰ روز
-                    </div>
+                    <div class="project-deadline"><img src="/svg/clock.svg" alt="زمان"> زمان تحویل: ۲۰ روز</div>
                     <a href="/src/pages/project-detail.html?id=4" class="project-link">مشاهده جزئیات پروژه <img src="/svg/arrow-left.svg" alt="arrow"></a>
                 </div>
             </div>

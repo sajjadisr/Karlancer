@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>تماس با ما | کارلنسر</title>
     <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="icon" type="image/svg+xml" href="/svg/favicon.svg">
     <style>
         .contact-page {
             padding: 60px 0;
@@ -96,12 +97,18 @@
     <header class="header">
         <div class="container">
             <div class="navbar">
+                <!-- دکمه همبرگر (سمت راست در RTL) -->
+                <button class="mobile-menu-toggle" aria-label="منو">
+                    <span></span><span></span><span></span>
+                </button>
+
                 <div class="logo">
                     <a href="/">
                         <img src="/Icon.svg" alt="لوگو کارلنسر" class="logo-img">
                         <span class="logo-text">کارلنسر</span>
                     </a>
                 </div>
+
                 <nav class="nav-menu">
                     <ul>
                         <li><a href="/">خانه</a></li>
@@ -110,6 +117,7 @@
                         <li><a href="/src/pages/contact.html" class="active">تماس با ما</a></li>
                     </ul>
                 </nav>
+
                 <div class="auth-buttons">
                     <button class="btn btn-outline">ورود</button>
                     <button class="btn btn-primary">ثبت‌نام</button>
