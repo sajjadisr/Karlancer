@@ -15,7 +15,7 @@ function getCategoryFromURL() {
 
 async function loadProjects() {
     try {
-        const response = await fetch('/data/projects.json');
+        const response = await fetch(import.meta.env.BASE_URL + 'data/projects.json');
         const data = await response.json();
         allProjects = data.projects;
         renderProjects();
@@ -56,15 +56,15 @@ function renderProjects() {
                 <div class="project-meta">
                     <span class="project-category">${project.category}</span>
                     <span class="project-budget">
-                        <img src="/svg/wallet.svg" alt="بودجه" style="width: 18px; vertical-align: middle; margin-left: 4px;">
+                        <img src="${import.meta.env.BASE_URL}svg/wallet.svg" alt="بودجه" style="width: 18px; vertical-align: middle; margin-left: 4px;">
                         ${project.budget}
                     </span>
                 </div>
                 <div class="project-deadline">
-                    <img src="/svg/clock.svg" alt="زمان"> زمان تحویل: ${project.deadline}
+                    <img src="${import.meta.env.BASE_URL}svg/clock.svg" alt="زمان"> زمان تحویل: ${project.deadline}
                 </div>
-                <a href="/src/pages/project-detail.html?id=${project.id}" class="project-link">
-                    مشاهده جزئیات پروژه <img src="/svg/arrow-left.svg" alt="arrow">
+                <a href="${import.meta.env.BASE_URL}src/pages/project-detail.html?id=${project.id}" class="project-link">
+                    مشاهده جزئیات پروژه <img src="${import.meta.env.BASE_URL}svg/arrow-left.svg" alt="arrow">
                 </a>
             </div>
         `;

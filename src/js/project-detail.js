@@ -12,7 +12,7 @@ async function loadProjectDetail() {
     }
 
     try {
-        const response = await fetch('/data/projects.json');
+        const response = await fetch(import.meta.env.BASE_URL + 'data/projects.json');
         const data = await response.json();
         const project = data.projects.find(p => p.id === id);
 
@@ -39,15 +39,15 @@ function renderDetail(project) {
 
             <div class="detail-info">
                 <div class="info-item">
-                    <div class="info-icon"><img src="/svg/wallet.svg" alt="بودجه"></div>
+                    <div class="info-icon"><img src="${import.meta.env.BASE_URL}svg/wallet.svg" alt="بودجه"></div>
                     <div><div class="info-label">بودجه</div><div class="info-value">${project.budget}</div></div>
                 </div>
                 <div class="info-item">
-                    <div class="info-icon"><img src="/svg/clock.svg" alt="زمان"></div>
+                    <div class="info-icon"><img src="${import.meta.env.BASE_URL}svg/clock.svg" alt="زمان"></div>
                     <div><div class="info-label">زمان تحویل</div><div class="info-value">${project.deadline}</div></div>
                 </div>
                 <div class="info-item">
-                    <div class="info-icon"><img src="/svg/folder.svg" alt="دسته"></div>
+                    <div class="info-icon"><img src="${import.meta.env.BASE_URL}svg/folder.svg" alt="دسته"></div>
                     <div><div class="info-label">دسته‌بندی</div><div class="info-value">${project.category}</div></div>
                 </div>
             </div>
@@ -66,7 +66,7 @@ function renderDetail(project) {
 
             <div class="proposal-stats">
                 <div class="proposal-count">
-                    <img src="/svg/proposal.svg" alt="پیشنهاد"> <strong>${project.proposalsCount}</strong> پیشنهاد ارسال شده
+                    <img src="${import.meta.env.BASE_URL}svg/proposal.svg" alt="پیشنهاد"> <strong>${project.proposalsCount}</strong> پیشنهاد ارسال شده
                 </div>
                 <div>آخرین مهلت: ${project.deadline}</div>
             </div>
@@ -76,12 +76,12 @@ function renderDetail(project) {
             </div>
 
             <div class="client-info">
-                <h3><img src="/svg/user.svg" alt="کارفرما"> اطلاعات کارفرما</h3>
+                <h3><img src="${import.meta.env.BASE_URL}svg/user.svg" alt="کارفرما"> اطلاعات کارفرما</h3>
                 <div class="client-details">
                     <div class="client-avatar">${project.client.avatar}</div>
                     <div>
                         <div class="client-name">${project.client.name}</div>
-                        <div class="client-rating"><img src="/svg/star.svg" alt="ستاره"> ${project.client.rating} (از ۵)</div>
+                        <div class="client-rating"><img src="${import.meta.env.BASE_URL}svg/star.svg" alt="ستاره"> ${project.client.rating} (از ۵)</div>
                         <div class="client-member">عضو از ${project.client.memberSince}</div>
                     </div>
                 </div>
