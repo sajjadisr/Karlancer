@@ -63,13 +63,8 @@ function renderProjects() {
                 <div class="project-deadline">
                     <img src="${import.meta.env.BASE_URL}svg/clock.svg" alt="زمان"> زمان تحویل: ${project.deadline}
                 </div>
-<<<<<<< HEAD
                 <a href="${import.meta.env.BASE_URL}src/pages/project-detail.html?id=${project.id}" class="project-link">
                     مشاهده جزئیات پروژه <img src="${import.meta.env.BASE_URL}svg/arrow-left.svg" alt="arrow">
-=======
-                <a href="project-detail.html?id=${project.id}" class="project-link">
-                    مشاهده جزئیات پروژه <img src="/svg/arrow-left.svg" alt="arrow">
->>>>>>> 03a838b (Fixed)
                 </a>
             </div>
         `;
