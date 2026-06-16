@@ -5,7 +5,7 @@
 /* فونت وزیر - برای متن‌های اصلی */
 @font-face {
     font-family: 'Vazir';
-    src: url('/Karlancer/fonts/vazir-font-v18.0.0/Vazir.woff2') format('woff2');
+    src: url('../../public/fonts/vazir-font-v18.0.0/Vazir.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -14,7 +14,7 @@
 /* فونت وزیر - نسخه ضخیم (Bold) */
 @font-face {
     font-family: 'Vazir';
-    src: url('/Karlancer/fonts/vazir-font-v18.0.0/Vazir-Bold.woff2') format('woff2');
+    src: url('../../public/fonts/vazir-font-v18.0.0/Vazir-Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -23,7 +23,7 @@
 /* فونت تنها - برای تیترها و هدرها */
 @font-face {
     font-family: 'Tanha';
-    src: url('/Karlancer/fonts/tanha-font-v0.9/Tanha.woff2') format('woff2');
+    src: url('../../public/fonts/tanha-font-v0.9/Tanha.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -32,7 +32,7 @@
 /* فونت تنها - نسخه ضخیم */
 @font-face {
     font-family: 'Tanha';
-    src: url('/Karlancer/fonts/tanha-font-v0.9/Tanha-Bold.woff2') format('woff2');
+    src: url('../../public/fonts/tanha-font-v0.9/Tanha-Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
     font-display: swap;

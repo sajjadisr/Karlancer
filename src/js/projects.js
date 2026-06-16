@@ -15,7 +15,7 @@ function getCategoryFromURL() {
 
 async function loadProjects() {
     try {
-        const response = await fetch(import.meta.env.BASE_URL + 'data/projects.json');
+        const response = await fetch(import.meta.env.BASE_URL + 'public/data/projects.json');
         const data = await response.json();
         allProjects = data.projects;
         renderProjects();

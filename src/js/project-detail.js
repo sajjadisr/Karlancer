@@ -12,7 +12,7 @@ async function loadProjectDetail() {
     }
 
     try {
-        const response = await fetch(import.meta.env.BASE_URL + 'data/projects.json');
+        const response = await fetch(import.meta.env.BASE_URL + 'public/data/projects.json');
         const data = await response.json();
         const project = data.projects.find(p => p.id === id);
 
