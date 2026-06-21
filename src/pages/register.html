@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ثبت‌نام | کارلنسر</title>
+    <link rel="stylesheet" href="../../src/css/style.css">
+    <link rel="stylesheet" href="../../src/css/auth.css">
+    <link rel="icon" type="image/svg+xml" href="../../public/svg/favicon.svg">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <!-- دکمه همبرگر (سمت راست در RTL) -->
+                <button class="mobile-menu-toggle" aria-label="منو">
+                    <span></span><span></span><span></span>
+                </button>
+
+                <div class="logo">
+                    <a href="../../index.html">
+                        <img src="../../public/Icon.svg" alt="لوگو کارلنسر" class="logo-img">
+                        <span class="logo-text">کارلنسر</span>
+                    </a>
+                </div>
+
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="../../index.html">خانه</a></li>
+                        <li><a href="projects.html">پروژه‌ها</a></li>
+                        <li><a href="about.html">درباره ما</a></li>
+                        <li><a href="contact.html">تماس با ما</a></li>
+                    </ul>
+                </nav>
+
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn btn-outline">ورود</a>
+                    <a href="register.html" class="btn btn-primary">ثبت‌نام</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="auth-main">
+        <div class="container">
+            <div class="auth-wrapper">
+                <!-- پنل بصری -->
+                <div class="auth-visual">
+                    <svg class="auth-visual-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                    <h2>به جمع کارلنسری‌ها بپیوند</h2>
+                    <p>چند قدم تا ساخت حساب کاربری فاصله داری. پروژه بسپار یا با انجام پروژه‌ها کسب درآمد کن.</p>
+                    <ul class="auth-features">
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            ثبت‌نام رایگان و سریع
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            مناسب کارفرما و فریلنسر
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            بدون هزینه پنهان
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- پنل فرم -->
+                <div class="auth-form-panel">
+                    <h1>ساخت حساب کاربری</h1>
+                    <p class="auth-subtitle">اطلاعات زیر را تکمیل کنید تا حساب شما ساخته شود.</p>
+
+                    <form id="registerForm" class="auth-form" novalidate>
+
+                        <div class="form-group">
+                            <label>نوع حساب کاربری</label>
+                            <div class="role-toggle">
+                                <div class="role-option">
+                                    <input type="radio" name="accountType" id="roleEmployer" value="employer">
+                                    <label for="roleEmployer">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="2" y="7" width="20" height="14" rx="2"></rect>
+                                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                        </svg>
+                                        کارفرما
+                                        <span class="role-option-desc">می‌خواهم پروژه بسپارم</span>
+                                    </label>
+                                </div>
+                                <div class="role-option">
+                                    <input type="radio" name="accountType" id="roleFreelancer" value="freelancer">
+                                    <label for="roleFreelancer">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                            <circle cx="12" cy="7" r="4"></circle>
+                                        </svg>
+                                        فریلنسر
+                                        <span class="role-option-desc">می‌خواهم پروژه انجام دهم</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="regName">نام و نام خانوادگی</label>
+                            <input type="text" id="regName" placeholder="مثلاً سارا محمدی" autocomplete="name">
+                            <div class="field-error" id="regNameError"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="regEmail">ایمیل</label>
+                            <input type="text" id="regEmail" placeholder="example@email.com" autocomplete="email">
+                            <div class="field-error" id="regEmailError"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="regPhone">شماره موبایل <span style="color:#999; font-weight: normal;">(اختیاری)</span></label>
+                            <input type="tel" id="regPhone" placeholder="۰۹۱۲۳۴۵۶۷۸۹" autocomplete="tel">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="regPassword">رمز عبور</label>
+                            <div class="password-field">
+                                <input type="password" id="regPassword" placeholder="رمز عبور بسازید" autocomplete="new-password">
+                                <button type="button" class="toggle-password" data-target="regPassword" aria-label="نمایش رمز عبور">
+                                    <svg class="icon-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"></path>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                    </svg>
+                                    <svg class="icon-eye-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M17.94 17.94A10.94 10.94 0 0 1 12 19c-7 0-11-7-11-7a18.5 18.5 0 0 1 5.06-5.94M9.9 4.24A10.94 10.94 0 0 1 12 4c7 0 11 7 11 7a18.49 18.49 0 0 1-2.16 3.19"></path>
+                                        <line x1="1" y1="1" x2="23" y2="23"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="field-hint">حداقل ۸ کاراکتر، ترکیبی از حروف و اعداد</div>
+                            <div class="field-error" id="regPasswordError"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="regConfirmPassword">تکرار رمز عبور</label>
+                            <div class="password-field">
+                                <input type="password" id="regConfirmPassword" placeholder="رمز عبور را دوباره وارد کنید" autocomplete="new-password">
+                                <button type="button" class="toggle-password" data-target="regConfirmPassword" aria-label="نمایش رمز عبور">
+                                    <svg class="icon-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"></path>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                    </svg>
+                                    <svg class="icon-eye-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M17.94 17.94A10.94 10.94 0 0 1 12 19c-7 0-11-7-11-7a18.5 18.5 0 0 1 5.06-5.94M9.9 4.24A10.94 10.94 0 0 1 12 4c7 0 11 7 11 7a18.49 18.49 0 0 1-2.16 3.19"></path>
+                                        <line x1="1" y1="1" x2="23" y2="23"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="field-error" id="regConfirmError"></div>
+                        </div>
+
+                        <div class="form-row">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="agreeTerms">
+                                با <a href="#" class="terms-link">قوانین و مقررات</a> کارلنسر موافقم
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn-auth-submit">ثبت‌نام</button>
+
+                        <div class="auth-message" id="registerMessage"></div>
+                    </form>
+
+                    <p class="auth-switch">قبلاً ثبت‌نام کرده‌اید؟ <a href="login.html">وارد شوید</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="../../src/js/main.js"></script>
+    <script type="module" src="../../src/js/auth.js"></script>
+</body>
+</html>

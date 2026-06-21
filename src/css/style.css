@@ -136,6 +136,7 @@ h1, h2, h3, h4, h5, h6,
    دکمه‌ها
    ============================================ */
 .btn {
+    display: inline-block;
     padding: 0.6rem 1.2rem;
     border: none;
     border-radius: 8px;
@@ -144,6 +145,8 @@ h1, h2, h3, h4, h5, h6,
     transition: all 0.3s;
     font-weight: 500;
     font-family: 'Tanha', 'Vazir', 'Tahoma', sans-serif;
+    text-decoration: none;
+    text-align: center;
 }
 
 .btn-outline {
