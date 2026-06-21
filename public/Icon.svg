@@ -1,31 +1,28 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
   <defs>
     <linearGradient id="kl-bg2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0c2e2f"/>
-      <stop offset="100%" stop-color="#15706b"/>
+      <stop offset="0%" stop-color="#667eea"/>
+      <stop offset="100%" stop-color="#764ba2"/>
     </linearGradient>
     <radialGradient id="kl-dot" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#ffd28a"/>
-      <stop offset="100%" stop-color="#ff8a3d"/>
+      <stop offset="0%" stop-color="#8ba4f9"/>
+      <stop offset="100%" stop-color="#4a6cf7"/>
     </radialGradient>
   </defs>
 
   <rect width="120" height="120" rx="26" fill="url(#kl-bg2)"/>
 
   <g stroke="#ffffff" stroke-width="14" stroke-linecap="round" fill="none">
-    <!-- vertical bar drops in from above -->
     <g opacity="0">
       <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="0.1s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" from="0,-20" to="0,0" dur="0.5s" begin="0.1s" fill="freeze" calcMode="spline" keySplines="0.22 1 0.36 1"/>
       <path d="M 41 26 V 94"/>
     </g>
-    <!-- upper arm slides in from top-right -->
     <g opacity="0">
       <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="0.45s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" from="16,-16" to="0,0" dur="0.45s" begin="0.45s" fill="freeze" calcMode="spline" keySplines="0.22 1 0.36 1"/>
       <path d="M 41 60 L 82 26"/>
     </g>
-    <!-- lower arm slides in from bottom-right -->
     <g opacity="0">
       <animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="0.7s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" from="16,16" to="0,0" dur="0.45s" begin="0.7s" fill="freeze" calcMode="spline" keySplines="0.22 1 0.36 1"/>
@@ -33,10 +30,10 @@
     </g>
   </g>
 
-  <!-- accent: a single pop-in dot at the joint, settles and stays still -->
   <g>
     <circle cx="41" cy="60" r="0" fill="url(#kl-dot)">
       <animate attributeName="r" from="0" to="7" dur="0.35s" begin="1s" fill="freeze" calcMode="spline" keySplines="0.34 1.56 0.64 1"/>
     </circle>
   </g>
 </svg>
+
